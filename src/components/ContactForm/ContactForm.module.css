@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+label {
+  font-size: 1.125rem;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  max-width: 90px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+input {
+  margin-top: 5px;
+}
