@@ -7,8 +7,14 @@ import css from 'App.module.css';
 
 export class App extends Component {
   state = {
-    contacts: JSON.parse(localStorage.getItem('Contacts:')),
+    contacts: [],
     filter: '',
+  };
+
+  componentDidMount = () => {
+    this.setState({
+      contacts: JSON.parse(localStorage.getItem('Contacts:')) || [],
+    });
   };
 
   addNewContact = (contact, number) => {
